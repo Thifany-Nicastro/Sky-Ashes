@@ -1,5 +1,3 @@
 # Sky Ashes
 
-Jogo plataforma desenvolvido em Unity
-
-teste
+Jogo plataforma do gênero terror/ação desenvolvido em Unity
