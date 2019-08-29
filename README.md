@@ -1,3 +1,3 @@
 # Sky Ashes
 
-Jogo plataforma do gênero terror/ação desenvolvido em Unity
+Jogo 2D do gênero ação/terror desenvolvido em Unity
