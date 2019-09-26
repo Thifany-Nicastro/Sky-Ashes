@@ -1,38 +1,48 @@
-[
-  {
-    "nome":"Felipe",
-    "sobrenome":"Venâncio",
-    "descrição": "...",
-    "github": "..."
-  }, 
-  {
-    "nome":"Felippe",
-    "sobrenome":"Papai",
-    "descrição": "...",
-    "github": "..."
-  }, 
-  {
-    "nome":"Gabriel",
-    "sobrenome":"Ferreira",
-    "descrição": "...",
-    "github": "..."
-  },
-  {
-    "nome":"João",
-    "sobrenome":"Marcos",
-    "descrição": "...",
-    "github": "..."
-  },
-  {
-    "nome":"Lucas",
-    "sobrenome":"Venâncio",
-    "descrição": "...",
-    "github": "..."
-  },
-  {
-    "nome":"Thifany",
-    "sobrenome":"Nicastro",
-    "descrição": "...",
-    "github": "Thifany-Nicastro"
+{
+  "equipe": {
+    "membros": [
+      {
+        "nome": "Felipe",
+        "sobrenome": "Venâncio",
+        "descrição": "...",
+        "github": "...",
+        "avatar": "img/star.png"
+      },
+      {
+        "nome": "Felippe",
+        "sobrenome": "Papai",
+        "descrição": "...",
+        "github": "...",
+        "avatar": "img/star.png"
+      },
+      {
+        "nome": "Gabriel",
+        "sobrenome": "Ferreira",
+        "descrição": "...",
+        "github": "...",
+        "avatar": "img/star.png"
+      },
+      {
+        "nome": "João",
+        "sobrenome": "Marcos",
+        "descrição": "...",
+        "github": "...",
+        "avatar": "img/star.png"
+      },
+      {
+        "nome": "Lucas",
+        "sobrenome": "Venâncio",
+        "descrição": "...",
+        "github": "...",
+        "avatar": "https://avatars3.githubusercontent.com/u/47925143?s=460&v=4"
+      },
+      {
+        "nome": "Thifany",
+        "sobrenome": "Nicastro",
+        "descrição": "...",
+        "github": "Thifany-Nicastro",
+        "avatar": "https://avatars3.githubusercontent.com/u/20716540?s=460&v=4"
+      }
+    ]
   }
-]
+}

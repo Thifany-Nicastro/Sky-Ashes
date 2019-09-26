@@ -1,10 +1,9 @@
 <header class="mt-3 text-center">
     <div class="logo mb-3">
-        <img src="star.png" width="100px;">
+        <img src="img/star.png" width="100px;">
     </div>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark" id="nav">
-        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#nav-links"
-            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#nav-links" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
