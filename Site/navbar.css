@@ -8,6 +8,39 @@ body, html {
   /* background-size: 300px; */
 }
 
+
+/*
+flip card
+*/
+.card-flip > div {
+  backface-visibility: hidden;
+  transition: transform 300ms;
+  transition-timing-function: linear;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.card-front {
+  transform: rotateY(0deg);
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+}
+
+.card-flip:hover .card-front {
+  transform: rotateY(-180deg);
+}
+  
+.card-flip:hover .card-back {
+  transform: rotateY(0deg);
+}
+
+
+
 /*#bg:after{
   content: ' ';
   display: block;
@@ -22,8 +55,9 @@ body, html {
   background-size: 300px;
 } */
 
-.col-card {
-  
+.avatar {
+  border: 3px solid rgb(13, 21, 32);
+  max-width: 95%;
 }
 
 .table td, th{
