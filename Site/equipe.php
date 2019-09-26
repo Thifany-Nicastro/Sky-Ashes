@@ -43,7 +43,7 @@
                             </div>
                             <div class="card-back justify-content-center d-flex align-items-center">
                                 <div class="card-body">
-                                    <h3 class="card-title"><?php echo $valor["nome"] . $valor["sobrenome"]; ?></h3>
+                                    <h3 class="card-title"><?php echo $valor["nome"] . " " . $valor["sobrenome"]; ?></h3>
                                     <p class="card-text">Suprise this one has more more more more content on the back!</p>
                                     <a href="https://github.com/<?php echo $valor["github"]; ?>" class="git"><i class="fab fa-github fa-4x"></i></a>
                                 </div>
