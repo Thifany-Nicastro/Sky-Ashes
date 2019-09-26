@@ -1,5 +1,5 @@
-<header class="mt-3 text-center">
-    <div class="logo mb-3">
+<header class="text-center">
+    <div class="logo py-3">
         <img src="img/star.png" width="100px;">
     </div>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark" id="nav">

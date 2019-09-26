@@ -21,6 +21,12 @@ body, html {
   box-shadow: 0px 24px 3px -24px rgb(13, 21, 32);
 }
 
+header {
+  background: rgba(13, 21, 32, 0.8);
+  /* background-image: url(https://unblast.com/wp-content/uploads/2018/10/Sky-Stars-Pattern-1600x1190.jpg); */
+  /* background-size: 300px; */
+}
+
 /*
 flip card
 */
