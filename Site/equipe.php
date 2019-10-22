@@ -14,6 +14,8 @@
 
     <!-- Custom styles for this template -->
     <link href="css/navbar.css" rel="stylesheet">
+    
+    <link rel="shortcut icon" href="img/star.ico" />
 
     <title>Equipe</title>
 </head>
