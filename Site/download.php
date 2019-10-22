@@ -12,7 +12,7 @@
     <!-- Custom styles for this template -->
     <link href="css/navbar.css" rel="stylesheet">
 
-    <title>Equipe</title>
+    <title>Download</title>
 </head>
 
 <body>
