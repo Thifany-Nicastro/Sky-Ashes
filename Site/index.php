@@ -13,7 +13,7 @@
     <!-- Custom styles for this template -->
     <link href="css/navbar.css" rel="stylesheet">
 
-    <title>Hello, world!</title>
+    <title>Sky Ashes</title>
 </head>
 
 <body>
