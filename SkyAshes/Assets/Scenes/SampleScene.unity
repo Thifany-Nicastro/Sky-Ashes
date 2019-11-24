@@ -47936,7 +47936,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 803392948}
-  anim: {fileID: 0}
+  anim: {fileID: 803392950}
 --- !u!1 &951367958
 GameObject:
   m_ObjectHideFlags: 0
