@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float speed = 5f;
     [SerializeField] private float jumpForce = 10f;
     [SerializeField] private float hurtForce = 7f;
-    [SerializeField] private int health;
+    [SerializeField] private int health = 3;
     [SerializeField] private Text healthAmount;
 
     private void Start()
@@ -58,12 +58,12 @@ public class PlayerController : MonoBehaviour
                 if(other.gameObject.transform.position.x > transform.position.x)
                 {
                     //Enemy right
-                    rb.velocity = new Vector2(-hurtForce, rb.velocity.y);
+                    rb.velocity = new Vector2(-hurtForce, hurtForce);
                 }
                 else
                 {
                     //Enemy left
-                    rb.velocity = new Vector2(hurtForce, rb.velocity.y);
+                    rb.velocity = new Vector2(hurtForce, hurtForce);
                 }
             }
         }
