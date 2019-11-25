@@ -1,0 +1,28 @@
+Stop sliding
+
+- else {rb2d.velocity = new Vector2(0,rb2d.velocity.y);}
+
+- I was using Input.GetAxis() instead of Input.GetAxisRaw()
+
+- https://www.reddit.com/r/Unity2D/comments/30m112/help_2d_topdown_movement_without_sliding/
+
+
+
+
+
+-In the rigid body.
+Play around with its mass (try increasing it).
+Try increasing its linear dampening (which is called drag I think).
+
+Give it a physics materiel.
+
+For the physics material
+Sets its static and dynamic material to 1.0
+Also set the friction combine parameter to use maximum.
+
+-Change the following settings in your projects physics settings.
+
+Edit > Project Settings > Physics
+
+Solver Iteration Count: at least 10 (I use 15)
+Enable Adaptive Force: On (I turn this on, although it isn't necessary)
