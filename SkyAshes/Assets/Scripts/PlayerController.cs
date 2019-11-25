@@ -44,9 +44,11 @@ public class PlayerController : MonoBehaviour
     {
         if(other.gameObject.tag == "Enemy")
         {
+            Crab crab = other.gameObject.GetComponent<Crab>();
             if(state == State.falling)
             {
-                Destroy(other.gameObject);
+                crab.JumpedOn();
+                //Destroy(other.gameObject);
                 Jump();
             }
             else
@@ -79,7 +81,7 @@ public class PlayerController : MonoBehaviour
 
     private void Movement()
     {
-        float hDirection = Input.GetAxis("Horizontal");
+        float hDirection = Input.GetAxisRaw("Horizontal");
 
         //left
         if(hDirection < 0)
@@ -92,6 +94,10 @@ public class PlayerController : MonoBehaviour
         {
             rb.velocity = new Vector2(speed, rb.velocity.y);
             transform.localScale = new Vector2(1, 1);
+        }
+        else 
+        {
+            rb.velocity = new Vector2(0, rb.velocity.y);
         }
         
         //jumping
