@@ -23,7 +23,12 @@ public class Crab : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
-    public void Update() 
+    private void Update() 
+    {
+        Move();
+    }
+
+    public void Move() 
     {
         if(facingLeft)
         {
