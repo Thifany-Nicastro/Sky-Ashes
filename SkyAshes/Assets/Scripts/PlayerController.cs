@@ -10,7 +10,6 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private Animator anim;
     private Collider2D coll;
-    private AudioSource footstep;
 
     private enum State {idle, running, jumping, falling, hurt}
     private State state = State.idle;
@@ -22,13 +21,14 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float hurtForce = 7f;
     [SerializeField] private int health = 3;
     [SerializeField] private Text healthAmount;
+    [SerializeField] private AudioSource hurt;
+    [SerializeField] private AudioSource footstep;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         coll = GetComponent<Collider2D>();
-        footstep = GetComponent<AudioSource>();
         healthAmount.text = health.ToString();
     }
 
@@ -46,15 +46,15 @@ public class PlayerController : MonoBehaviour
     {
         if(other.gameObject.tag == "Enemy")
         {
-            Crab crab = other.gameObject.GetComponent<Crab>();
+            Enemy enemy = other.gameObject.GetComponent<Enemy>();
             if(state == State.falling)
             {
-                crab.JumpedOn();
-                //Destroy(other.gameObject);
+                enemy.JumpedOn();
                 Jump();
             }
             else
             {
+                hurt.Play();
                 state = State.hurt;
                 HandleHealth();
                 if(other.gameObject.transform.position.x > transform.position.x)

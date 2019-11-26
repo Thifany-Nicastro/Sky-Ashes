@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Crab : MonoBehaviour
+public class Crab : Enemy
 {
     [SerializeField] private float leftCap;
     [SerializeField] private float rightCap;
@@ -11,18 +11,13 @@ public class Crab : MonoBehaviour
     [SerializeField] private float jumpHeight = 15f;
     [SerializeField] private LayerMask ground;
     private Collider2D coll;
-    private Rigidbody2D rb;
-    private Animator anim;
-    private AudioSource explode;
     
     private bool facingLeft = true;
 
-    private void Start()
+    protected override void Start()
     {
+        base.Start();
         coll = GetComponent<Collider2D>();
-        rb = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
-        explode = GetComponent<AudioSource>();
     }
 
     private void Update() 
@@ -73,21 +68,6 @@ public class Crab : MonoBehaviour
                 facingLeft = true;
             }
         }
-    }
-
-    public void JumpedOn()
-    {
-        anim.SetTrigger("Death");
-    }
-
-    private void Death()
-    {
-        Destroy(this.gameObject);
-    }
-
-    private void Explode()
-    {
-        explode.Play();
     }
 
 }
