@@ -13,6 +13,7 @@ public class Crab : MonoBehaviour
     private Collider2D coll;
     private Rigidbody2D rb;
     private Animator anim;
+    private AudioSource explode;
     
     private bool facingLeft = true;
 
@@ -21,6 +22,7 @@ public class Crab : MonoBehaviour
         coll = GetComponent<Collider2D>();
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        explode = GetComponent<AudioSource>();
     }
 
     private void Update() 
@@ -81,6 +83,11 @@ public class Crab : MonoBehaviour
     private void Death()
     {
         Destroy(this.gameObject);
+    }
+
+    private void Explode()
+    {
+        explode.Play();
     }
 
 }
