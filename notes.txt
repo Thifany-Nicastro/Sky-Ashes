@@ -1,13 +1,10 @@
-Stop sliding
+Stop sliding  //done
 
-- else {rb2d.velocity = new Vector2(0,rb2d.velocity.y);}
+- else {rb2d.velocity = new Vector2(0,rb2d.velocity.y);}  //worked
 
 - I was using Input.GetAxis() instead of Input.GetAxisRaw()
 
 - https://www.reddit.com/r/Unity2D/comments/30m112/help_2d_topdown_movement_without_sliding/
-
-
-
 
 
 -In the rigid body.
@@ -26,3 +23,20 @@ Edit > Project Settings > Physics
 
 Solver Iteration Count: at least 10 (I use 15)
 Enable Adaptive Force: On (I turn this on, although it isn't necessary)
+
+---------------------------------------------------------------------------------------
+
+Player stuck on wall
+
+- Apply a "slippery" physics material to the character's box collider.
+
+i.e, Assets > Create > PhysicsMaterial2D and simply changed the friction variable to 0 from the inspector and apply to walls as well as character.
+
+- https://forum.unity.com/threads/object-wont-fall-when-i-apply-horizontal-velocity-and-is-colliding-with-wall.143698/
+
+- With this method, he still stuck to walls for me. I fixed it by changing the Friction & Bounce Combine settings from "Average" to "Multiply" with the Dynamic & Static Friction set to 0.
+
+- https://docs.unity3d.com/Manual/class-PhysicsMaterial2D.html
+
+- Dont necessarily need to add bounciness, did you try to reduce the friction to near 0?
+If it does not work, maybe you need to add this material to the character too... (Ive never tried this in 2d, so sorry if this does not work - it solved the same issue for me in 3d).
