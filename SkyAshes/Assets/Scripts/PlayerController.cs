@@ -69,6 +69,10 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
+        if(other.gameObject.tag == "Water")
+        {
+            Restart();
+        }
     }
 
     private void HandleHealth()
@@ -77,7 +81,7 @@ public class PlayerController : MonoBehaviour
         healthAmount.text = health.ToString();
         if(health <= 0)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            Restart();
         }
     }
 
@@ -152,5 +156,10 @@ public class PlayerController : MonoBehaviour
     private void Footstep()
     {
         footstep.Play();
+    }
+
+    private void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
