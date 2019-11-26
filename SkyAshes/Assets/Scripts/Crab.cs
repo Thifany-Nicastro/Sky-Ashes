@@ -42,6 +42,7 @@ public class Crab : MonoBehaviour
                 if(coll.IsTouchingLayers(ground))
                 {
                     rb.velocity = new Vector2(-5, rb.velocity.y);
+                    anim.SetBool("Walking", true);
                 }
             }
             else
@@ -62,6 +63,7 @@ public class Crab : MonoBehaviour
                 if(coll.IsTouchingLayers(ground))
                 {
                     rb.velocity = new Vector2(5, rb.velocity.y);
+                    anim.SetBool("Walking", true);
                 }
             }
             else
