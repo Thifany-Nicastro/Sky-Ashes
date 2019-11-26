@@ -28,6 +28,8 @@ Enable Adaptive Force: On (I turn this on, although it isn't necessary)
 
 Player stuck on wall
 
+- Platform Effector 2D  //worked
+
 - Apply a "slippery" physics material to the character's box collider.
 
 i.e, Assets > Create > PhysicsMaterial2D and simply changed the friction variable to 0 from the inspector and apply to walls as well as character.
