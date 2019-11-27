@@ -69,10 +69,10 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
-        if(other.gameObject.tag == "Water")
+        /*if(other.gameObject.tag == "Water")
         {
             Restart();
-        }
+        }*/
     }
 
     private void HandleHealth()
