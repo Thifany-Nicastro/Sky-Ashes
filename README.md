@@ -8,13 +8,19 @@ Jogo 2D do gênero ação/terror desenvolvido em Unity
 
 # Assets
 
+## Art
+
 - [Warped Caves](https://assetstore.unity.com/packages/2d/characters/warped-caves-103250)
 
-- [FREE Casual Game SFX Pack](https://assetstore.unity.com/packages/audio/sound-fx/free-casual-game-sfx-pack-54116)
+- [Pixel Font - Thaleah](https://assetstore.unity.com/packages/2d/fonts/free-pixel-font-thaleah-140059)
+
+## SFX
 
 - [Footstep(Snow and Grass](https://assetstore.unity.com/packages/audio/sound-fx/footstep-snow-and-grass-90678)
 
-- [Pixel Font - Thaleah](https://assetstore.unity.com/packages/2d/fonts/free-pixel-font-thaleah-140059)
+- [FREE Casual Game SFX Pack](https://assetstore.unity.com/packages/audio/sound-fx/free-casual-game-sfx-pack-54116)
+
+## Ambient sound
 
 - [Deep In Space](https://assetstore.unity.com/packages/audio/music/electronic/deep-in-space-88071)
 
