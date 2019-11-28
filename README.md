@@ -16,7 +16,7 @@ Jogo 2D do gênero ação/terror desenvolvido em Unity
 
 ## SFX
 
-- [Footstep(Snow and Grass](https://assetstore.unity.com/packages/audio/sound-fx/footstep-snow-and-grass-90678)
+- [Footstep(Snow and Grass)](https://assetstore.unity.com/packages/audio/sound-fx/footstep-snow-and-grass-90678)
 
 - [FREE Casual Game SFX Pack](https://assetstore.unity.com/packages/audio/sound-fx/free-casual-game-sfx-pack-54116)
 
